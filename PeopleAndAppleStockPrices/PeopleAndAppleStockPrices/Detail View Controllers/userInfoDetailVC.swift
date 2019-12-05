@@ -9,6 +9,8 @@
 import UIKit
 
 class userInfoDetailVC: UIViewController {
+    
+    @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
@@ -18,13 +20,16 @@ class userInfoDetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    
+    updateUI()
         
     }
+    
     func updateUI() {
-        nameLabel.text = userInfo?.first
+      
         emailLabel.text = userInfo?.email
-//        cityLabel.text = userInfo?.city
+        nameLabel.text = userInfo?.name.first
+        cityLabel.text = userInfo?.location.city
+        
        }
 
 

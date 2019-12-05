@@ -18,7 +18,6 @@ class userInfoViewController: UIViewController {
         }
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadData()
@@ -27,7 +26,7 @@ class userInfoViewController: UIViewController {
     }
     
     func loadData() {
-        users = UserInfoData.getUserInfo()
+        users = PeopleInfo.getUserInfo()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -39,13 +38,11 @@ class userInfoViewController: UIViewController {
         }
         
         let user = users[indexPath.row]
-//        userInfo.users = user
-           
+        userInfo.userInfo = user
     }
-
-
 }
 
+//-------------------------------------------------------------------------
 
 extension userInfoViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -57,9 +54,9 @@ extension userInfoViewController: UITableViewDataSource {
         
         let user = users[indexPath.row]
         
-        userCell.textLabel?.text = user.first
+        userCell.textLabel?.text = user.name.first
         
         return userCell
     }
-
+    
 }

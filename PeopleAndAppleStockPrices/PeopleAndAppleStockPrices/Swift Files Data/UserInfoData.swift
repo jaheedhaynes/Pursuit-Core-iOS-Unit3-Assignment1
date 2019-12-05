@@ -8,23 +8,40 @@
 
 import Foundation
 
-struct ResultsArr: Codable  {
+struct PeopleInfo: Codable  {
     let results: [UserInfoData]
 }
 
 struct UserInfoData: Codable {
+    let location: Location
+    let name: Name
+    let email: String
+    let picture: Image
     
+}
+
+struct Location: Codable {
+    let city: String
+}
+
+struct Name: Codable {
     let first: String
     let last: String
-    let email: String
-    let city: [Location]
     
-struct Location: Codable {
-    
-    let city: String
-    
+    private enum CodingKeys: String, CodingKey {
+        case first = "first"
+        case last = "last"
+        
     }
+}
 
+struct Image: Codable {
+    let large: String
+}
+
+//-------------------------------------------------------------------------
+
+extension PeopleInfo {
     
     static func getUserInfo() -> [UserInfoData] {
         var users = [UserInfoData]()
@@ -35,12 +52,14 @@ struct Location: Codable {
         }
         do {
             let data = try Data(contentsOf: sourceURL)
-            let userData = try JSONDecoder().decode([UserInfoData].self, from: data)
-            users = userData
+            let userData = try JSONDecoder().decode(PeopleInfo.self, from: data)
+            
+            users = userData.results
             
         } catch {
-            fatalError()
+            fatalError("\(error)")
         }
         return users
     }
+    
 }

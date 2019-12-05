@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3052F5C023996FFE001A54B1 /* ImageClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3052F5BF23996FFE001A54B1 /* ImageClient.swift */; };
 		30931DEA2398430100FCF39A /* userInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30931DE92398430100FCF39A /* userInfoViewController.swift */; };
 		30931DEC2398432D00FCF39A /* userInfoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30931DEB2398432D00FCF39A /* userInfoDetailVC.swift */; };
 		30931DEE239843D000FCF39A /* appleStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30931DED239843D000FCF39A /* appleStockViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3052F5BF23996FFE001A54B1 /* ImageClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClient.swift; sourceTree = "<group>"; };
 		30931DE92398430100FCF39A /* userInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userInfoViewController.swift; sourceTree = "<group>"; };
 		30931DEB2398432D00FCF39A /* userInfoDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userInfoDetailVC.swift; sourceTree = "<group>"; };
 		30931DED239843D000FCF39A /* appleStockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appleStockViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				577E5BEF21BA8BA10083EB97 /* Main.storyboard */,
+				3052F5BF23996FFE001A54B1 /* ImageClient.swift */,
 				30931DF22398461000FCF39A /* View Controllers */,
 				30931DF1239845F900FCF39A /* Detail View Controllers */,
 				30931DF72398468100FCF39A /* Swift Files Data */,
@@ -204,6 +207,7 @@
 				30931DEE239843D000FCF39A /* appleStockViewController.swift in Sources */,
 				30931DEA2398430100FCF39A /* userInfoViewController.swift in Sources */,
 				30931DF62398466F00FCF39A /* AppleStockData.swift in Sources */,
+				3052F5C023996FFE001A54B1 /* ImageClient.swift in Sources */,
 				30931DF02398442600FCF39A /* appleStockDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

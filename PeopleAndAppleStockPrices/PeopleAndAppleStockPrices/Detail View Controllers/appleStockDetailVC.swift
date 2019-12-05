@@ -9,7 +9,11 @@
 import UIKit
 
 class appleStockDetailVC: UIViewController {
-
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var thumbUPthumbDownImage: UIImageView!
+    @IBOutlet weak var openLabel: UILabel!
+    @IBOutlet weak var closeLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
