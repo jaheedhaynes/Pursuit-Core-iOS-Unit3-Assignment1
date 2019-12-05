@@ -7,25 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30931DEA2398430100FCF39A /* userInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30931DE92398430100FCF39A /* userInfoViewController.swift */; };
+		30931DEC2398432D00FCF39A /* userInfoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30931DEB2398432D00FCF39A /* userInfoDetailVC.swift */; };
+		30931DEE239843D000FCF39A /* appleStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30931DED239843D000FCF39A /* appleStockViewController.swift */; };
+		30931DF02398442600FCF39A /* appleStockDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30931DEF2398442600FCF39A /* appleStockDetailVC.swift */; };
+		30931DF42398465700FCF39A /* UserInfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30931DF32398465700FCF39A /* UserInfoData.swift */; };
+		30931DF62398466F00FCF39A /* AppleStockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30931DF52398466F00FCF39A /* AppleStockData.swift */; };
 		577E5BEC21BA8BA10083EB97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577E5BEB21BA8BA10083EB97 /* AppDelegate.swift */; };
-		577E5BEE21BA8BA10083EB97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577E5BED21BA8BA10083EB97 /* ViewController.swift */; };
 		577E5BF121BA8BA10083EB97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577E5BEF21BA8BA10083EB97 /* Main.storyboard */; };
 		577E5BF321BA8BA20083EB97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 577E5BF221BA8BA20083EB97 /* Assets.xcassets */; };
 		577E5BF621BA8BA20083EB97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577E5BF421BA8BA20083EB97 /* LaunchScreen.storyboard */; };
-		577E5BFF21BA8C3B0083EB97 /* userinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 577E5BFE21BA8C3B0083EB97 /* userinfo.json */; };
-		577E5C0121BA8C5C0083EB97 /* applstockinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 577E5C0021BA8C5C0083EB97 /* applstockinfo.json */; };
+		577E5BFF21BA8C3B0083EB97 /* userInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 577E5BFE21BA8C3B0083EB97 /* userInfo.json */; };
+		577E5C0121BA8C5C0083EB97 /* appleStockInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 577E5C0021BA8C5C0083EB97 /* appleStockInfo.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30931DE92398430100FCF39A /* userInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userInfoViewController.swift; sourceTree = "<group>"; };
+		30931DEB2398432D00FCF39A /* userInfoDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userInfoDetailVC.swift; sourceTree = "<group>"; };
+		30931DED239843D000FCF39A /* appleStockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appleStockViewController.swift; sourceTree = "<group>"; };
+		30931DEF2398442600FCF39A /* appleStockDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appleStockDetailVC.swift; sourceTree = "<group>"; };
+		30931DF32398465700FCF39A /* UserInfoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoData.swift; sourceTree = "<group>"; };
+		30931DF52398466F00FCF39A /* AppleStockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleStockData.swift; sourceTree = "<group>"; };
 		577E5BE821BA8BA10083EB97 /* PeopleAndAppleStockPrices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeopleAndAppleStockPrices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		577E5BEB21BA8BA10083EB97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		577E5BED21BA8BA10083EB97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		577E5BF021BA8BA10083EB97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		577E5BF221BA8BA20083EB97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		577E5BF521BA8BA20083EB97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		577E5BF721BA8BA20083EB97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		577E5BFE21BA8C3B0083EB97 /* userinfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userinfo.json; sourceTree = "<group>"; };
-		577E5C0021BA8C5C0083EB97 /* applstockinfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = applstockinfo.json; sourceTree = "<group>"; };
+		577E5BFE21BA8C3B0083EB97 /* userInfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userInfo.json; sourceTree = "<group>"; };
+		577E5C0021BA8C5C0083EB97 /* appleStockInfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = appleStockInfo.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +49,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30931DF1239845F900FCF39A /* Detail View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				30931DEB2398432D00FCF39A /* userInfoDetailVC.swift */,
+				30931DEF2398442600FCF39A /* appleStockDetailVC.swift */,
+			);
+			path = "Detail View Controllers";
+			sourceTree = "<group>";
+		};
+		30931DF22398461000FCF39A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				30931DE92398430100FCF39A /* userInfoViewController.swift */,
+				30931DED239843D000FCF39A /* appleStockViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		30931DF72398468100FCF39A /* Swift Files Data */ = {
+			isa = PBXGroup;
+			children = (
+				30931DF32398465700FCF39A /* UserInfoData.swift */,
+				30931DF52398466F00FCF39A /* AppleStockData.swift */,
+			);
+			path = "Swift Files Data";
+			sourceTree = "<group>";
+		};
 		577E5BDF21BA8BA10083EB97 = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +95,10 @@
 		577E5BEA21BA8BA10083EB97 /* PeopleAndAppleStockPrices */ = {
 			isa = PBXGroup;
 			children = (
-				577E5BED21BA8BA10083EB97 /* ViewController.swift */,
 				577E5BEF21BA8BA10083EB97 /* Main.storyboard */,
+				30931DF22398461000FCF39A /* View Controllers */,
+				30931DF1239845F900FCF39A /* Detail View Controllers */,
+				30931DF72398468100FCF39A /* Swift Files Data */,
 				577E5BFD21BA8BE20083EB97 /* Supporting Files */,
 				577E5BF721BA8BA20083EB97 /* Info.plist */,
 			);
@@ -80,8 +119,8 @@
 		577E5C0221BA8C620083EB97 /* json */ = {
 			isa = PBXGroup;
 			children = (
-				577E5BFE21BA8C3B0083EB97 /* userinfo.json */,
-				577E5C0021BA8C5C0083EB97 /* applstockinfo.json */,
+				577E5BFE21BA8C3B0083EB97 /* userInfo.json */,
+				577E5C0021BA8C5C0083EB97 /* appleStockInfo.json */,
 			);
 			path = json;
 			sourceTree = "<group>";
@@ -144,8 +183,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				577E5BFF21BA8C3B0083EB97 /* userinfo.json in Resources */,
-				577E5C0121BA8C5C0083EB97 /* applstockinfo.json in Resources */,
+				577E5BFF21BA8C3B0083EB97 /* userInfo.json in Resources */,
+				577E5C0121BA8C5C0083EB97 /* appleStockInfo.json in Resources */,
 				577E5BF621BA8BA20083EB97 /* LaunchScreen.storyboard in Resources */,
 				577E5BF321BA8BA20083EB97 /* Assets.xcassets in Resources */,
 				577E5BF121BA8BA10083EB97 /* Main.storyboard in Resources */,
@@ -159,8 +198,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				577E5BEE21BA8BA10083EB97 /* ViewController.swift in Sources */,
+				30931DEC2398432D00FCF39A /* userInfoDetailVC.swift in Sources */,
 				577E5BEC21BA8BA10083EB97 /* AppDelegate.swift in Sources */,
+				30931DF42398465700FCF39A /* UserInfoData.swift in Sources */,
+				30931DEE239843D000FCF39A /* appleStockViewController.swift in Sources */,
+				30931DEA2398430100FCF39A /* userInfoViewController.swift in Sources */,
+				30931DF62398466F00FCF39A /* AppleStockData.swift in Sources */,
+				30931DF02398442600FCF39A /* appleStockDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
