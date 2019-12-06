@@ -8,31 +8,66 @@
 
 import Foundation
 
-struct AppleStockInfo {
+struct AppleStockInfo: Codable {
     let date: String
-    let open: String
-    let close: String
+    let label: String
+    let open: Double
+    let close: Double
 }
 
 
-//extension AppleStockInfo {
-//
-//    static func getStockInfo() -> [UserInfoData] {
-//        var users = [UserInfoData]()
-//
-//        guard let sourceURL = Bundle.main.url(forResource: "userInfo", withExtension: "json")
-//            else {
-//                fatalError()
-//        }
-//        do {
-//            let data = try Data(contentsOf: sourceURL)
-//            let userData = try JSONDecoder().decode(AppleStockInfo.self, from: data)
-//
-//            users = userData
-//
-//        } catch {
-//           fatalError("something went wrong")
-//        }
-//        return users
-//    }
-//}
+//----------------------------------------------------------------------------------------------------------
+// MARK:- Extensions
+
+extension AppleStockInfo {
+    
+    static func getStocks() -> [AppleStockInfo] {
+        
+        var stock = [AppleStockInfo]()
+        guard let file = Bundle.main.url(forResource: "appleStockInfo", withExtension: "json") else {
+            fatalError("can't locate json data")
+        }
+        do {
+            let data = try Data(contentsOf: file)
+            
+            let stockData = try JSONDecoder().decode([AppleStockInfo].self, from: data)
+            stock = stockData
+            
+        } catch {
+            fatalError("\(error)")
+        }
+        
+        return stock
+    }
+    
+    static func getStockSections() -> [[AppleStockInfo]] {
+        
+        let stocks = getStocks()
+        
+        let monthName: Set<String> = Set(stocks.map { $0.label })
+        
+        var sectionsArr = Array(repeating: [AppleStockInfo](), count: monthName.count)
+        
+        var currentIndex = 0
+        
+        var currentMonth = stocks.first?.label.components(separatedBy: " ").first ?? ""
+        
+        //---------------------------------------------------------------------------------------
+        
+        for stock in stocks {
+            let month = stock.label.components(separatedBy: " ").first ?? ""
+            
+            if month == currentMonth {
+                sectionsArr[currentIndex].append(stock)
+            } else {
+                currentIndex += 1
+                currentMonth = stock.label.components(separatedBy: " ").first ?? ""
+                sectionsArr[currentIndex].append(stock)
+            }
+        }
+        return sectionsArr
+        
+        //---------------------------------------------------------------------------------------
+        
+    }
+}
