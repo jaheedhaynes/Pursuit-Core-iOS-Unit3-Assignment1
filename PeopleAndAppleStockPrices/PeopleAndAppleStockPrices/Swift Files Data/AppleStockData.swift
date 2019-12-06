@@ -47,10 +47,18 @@ extension AppleStockInfo {
         
         let stocks = getStocks()
         
-     
-        let monthName: Set<String> = Set(stocks.map { $0.label })
+        var monthLabel = Set<String>()
         
-        var sectionsArr = Array(repeating: [AppleStockInfo](), count: monthName.count)
+        for stock in stocks {
+            
+            var monthYear = stock.label
+            var mYear = monthYear.components(separatedBy: " ")
+            mYear.remove(at: 1)
+            monthYear = mYear.joined()
+            monthLabel.insert(monthYear)
+        }
+        
+        var sectionsArr = Array(repeating: [AppleStockInfo](), count: monthLabel.count)
         
         var currentIndex = 0
         
