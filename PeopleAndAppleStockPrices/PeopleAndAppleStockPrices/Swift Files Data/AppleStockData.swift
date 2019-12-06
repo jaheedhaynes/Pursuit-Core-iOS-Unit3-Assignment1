@@ -40,10 +40,14 @@ extension AppleStockInfo {
         return stock
     }
     
+    //---------------------------------------------------------------------------------------
+    // This seperates each month into its on section
+    
     static func getStockSections() -> [[AppleStockInfo]] {
         
         let stocks = getStocks()
         
+     
         let monthName: Set<String> = Set(stocks.map { $0.label })
         
         var sectionsArr = Array(repeating: [AppleStockInfo](), count: monthName.count)
@@ -53,12 +57,14 @@ extension AppleStockInfo {
         var currentMonth = stocks.first?.label.components(separatedBy: " ").first ?? ""
         
         //---------------------------------------------------------------------------------------
+        // This seperates each date within each month where there is an open & close
         
         for stock in stocks {
             let month = stock.label.components(separatedBy: " ").first ?? ""
             
             if month == currentMonth {
                 sectionsArr[currentIndex].append(stock)
+                
             } else {
                 currentIndex += 1
                 currentMonth = stock.label.components(separatedBy: " ").first ?? ""

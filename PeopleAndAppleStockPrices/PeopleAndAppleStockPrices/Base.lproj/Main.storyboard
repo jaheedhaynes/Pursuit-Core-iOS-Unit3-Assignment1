@@ -119,7 +119,7 @@
             </objects>
             <point key="canvasLocation" x="1876.8115942028987" y="150"/>
         </scene>
-        <!--User Info View Controller-->
+        <!--Users-->
         <scene sceneID="8Wd-dc-crB">
             <objects>
                 <viewController id="6Js-AC-uBF" customClass="userInfoViewController" customModule="PeopleAndAppleStockPrices" customModuleProvider="target" sceneMemberID="viewController">
@@ -182,7 +182,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wcz-5a-NLR"/>
                     </view>
-                    <navigationItem key="navigationItem" id="MA8-DO-cdP"/>
+                    <navigationItem key="navigationItem" title="Users" id="MA8-DO-cdP"/>
                     <connections>
                         <outlet property="userInfoTable" destination="cVv-gZ-Fse" id="pfx-hQ-wA7"/>
                         <outlet property="userSearchBar" destination="AfU-rh-cva" id="PED-GN-oMf"/>
@@ -265,8 +265,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gsw-Jv-Rdt" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="🙍🏾‍♂️Users🙍🏼‍♀️" id="kcB-pw-wEo"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vZb-qK-Hxh">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="vZb-qK-Hxh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

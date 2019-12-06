@@ -93,8 +93,7 @@ extension appleStockViewController: UITableViewDataSource {
         let month = appleStockArray[section].first?.label.components(separatedBy: " ").first ?? ""
         let year = appleStockArray[section].first?.label.components(separatedBy: " ").last ?? ""
         
-        // this line was partially from stackOverFlow
-        // unsure as to what its actually doing but it works
+        // "%.2f" displays the two digits after the decimal point
         return "\(month) - 20\(year), average open: \(String(format: "%.2f", average))"
     }
     

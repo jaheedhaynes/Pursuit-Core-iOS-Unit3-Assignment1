@@ -62,6 +62,7 @@ class userInfoViewController: UIViewController {
 }
 
 //-------------------------------------------------------------------------
+//MARK: EXTENSION (DataSource for TableView)
 
 extension userInfoViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -73,6 +74,7 @@ extension userInfoViewController: UITableViewDataSource {
         
         let user = users[indexPath.row]
         
+        // Code Below retrieves the images to populate the initial tableView
         userCell.textLabel?.text = user.name.first.uppercased()
         userCell.detailTextLabel?.text = user.location.city.uppercased()
         ImageClient.fetchImage(for: user.picture.large) {  (result) in
@@ -86,14 +88,13 @@ extension userInfoViewController: UITableViewDataSource {
                 }
             }
         }
-        
-        
         return userCell
     }
     
 }
 
 //-------------------------------------------------------------------------
+//MARK: EXTENSION (SEARCH BAR METHODS)
 
 extension userInfoViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
