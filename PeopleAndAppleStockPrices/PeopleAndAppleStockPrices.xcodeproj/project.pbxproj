@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		300CBFD0239E96B200F91C3F /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 300CBFCF239E96B200F91C3F /* giphy.gif */; };
+		300CC00A239EF52E00F91C3F /* GifStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CC009239EF52E00F91C3F /* GifStruct.swift */; };
 		3052F5C023996FFE001A54B1 /* ImageClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3052F5BF23996FFE001A54B1 /* ImageClient.swift */; };
 		30931DEA2398430100FCF39A /* userInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30931DE92398430100FCF39A /* userInfoViewController.swift */; };
 		30931DEC2398432D00FCF39A /* userInfoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30931DEB2398432D00FCF39A /* userInfoDetailVC.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		300CBFCF239E96B200F91C3F /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giphy.gif; sourceTree = "<group>"; };
+		300CC009239EF52E00F91C3F /* GifStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifStruct.swift; sourceTree = "<group>"; };
 		3052F5BF23996FFE001A54B1 /* ImageClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClient.swift; sourceTree = "<group>"; };
 		30931DE92398430100FCF39A /* userInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userInfoViewController.swift; sourceTree = "<group>"; };
 		30931DEB2398432D00FCF39A /* userInfoDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userInfoDetailVC.swift; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 			children = (
 				30931DF32398465700FCF39A /* UserInfoData.swift */,
 				30931DF52398466F00FCF39A /* AppleStockData.swift */,
+				300CC009239EF52E00F91C3F /* GifStruct.swift */,
 			);
 			path = "Swift Files Data";
 			sourceTree = "<group>";
@@ -98,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				577E5BEF21BA8BA10083EB97 /* Main.storyboard */,
+				300CBFCF239E96B200F91C3F /* giphy.gif */,
 				3052F5BF23996FFE001A54B1 /* ImageClient.swift */,
 				30931DF22398461000FCF39A /* View Controllers */,
 				30931DF1239845F900FCF39A /* Detail View Controllers */,
@@ -190,6 +196,7 @@
 				577E5C0121BA8C5C0083EB97 /* appleStockInfo.json in Resources */,
 				577E5BF621BA8BA20083EB97 /* LaunchScreen.storyboard in Resources */,
 				577E5BF321BA8BA20083EB97 /* Assets.xcassets in Resources */,
+				300CBFD0239E96B200F91C3F /* giphy.gif in Resources */,
 				577E5BF121BA8BA10083EB97 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,6 +215,7 @@
 				30931DEA2398430100FCF39A /* userInfoViewController.swift in Sources */,
 				30931DF62398466F00FCF39A /* AppleStockData.swift in Sources */,
 				3052F5C023996FFE001A54B1 /* ImageClient.swift in Sources */,
+				300CC00A239EF52E00F91C3F /* GifStruct.swift in Sources */,
 				30931DF02398442600FCF39A /* appleStockDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
